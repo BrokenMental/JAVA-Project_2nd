@@ -4,8 +4,8 @@ import java.util.*;
 
 public class DB {
 
-String strDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-String strURL = "jdbc:sqlserver://localhost:8080;";
+String strDriver = "com.mysql.jdbc.Driver"; // 연결할 jdbc드라이버가 mysql이라고 선언
+String strURL = "jdbc:mysql://localhost:8080;DatabaseName=java"; // jdbc를 통해 연결할 mysql database이름 설정
 String strUser = "root";
 String strPWD = "1234";
 
