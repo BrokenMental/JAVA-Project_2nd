@@ -17,4 +17,4 @@
 <td width = "250px"><img src ="https://github.com/BrokenMental/Java_Project-2nd/blob/master/pics/%EC%9E%90%EB%A6%AC%EC%84%A0%ED%83%9D%ED%8F%BC.PNG?raw=true">
 </td>
 </tr>
-</table>
+</table> 
