@@ -2,7 +2,7 @@
 
 <table>
 <tr>
-<td>로그인폼</td><td>회원가입폼</td><td>예매폼(변경)</td><td>자리선택</td>
+<td>로그인폼</td><td>회원가입폼</td><td>예매폼(변경)</td><td>자리선택폼</td>
 </tr>
 <tr>
 <td width = "250px">
