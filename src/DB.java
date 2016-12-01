@@ -4,8 +4,8 @@ import java.util.*;
 
 public class DB {
 
-String strDriver = "com.mysql.jdbc.Driver"; // 연결할 jdbc드라이버가 mysql이라고 선언
-String strURL = "jdbc:mysql://localhost:8080;DatabaseName=java"; // jdbc를 통해 연결할 mysql database이름 설정
+String strDriver = "com.mysql.jdbc.Driver"; //"com.microsoft.sqlserver.jdbc.SQLServerDriver"; // 연결할 jdbc드라이버가 mysql이라고 선언
+String strURL = "jdbc:mysql://localhost:3306/java"; // "jdbc:sqlserver://localhost:3306;DatabaseName=java;"; //jdbc를 통해 연결할 mysql database이름 설정
 String strUser = "root";
 String strPWD = "1234";
 
@@ -19,7 +19,7 @@ ResultSet DB_rs;        // SQL 실행 결과 저장
             DB_con = DriverManager.getConnection(strURL, strUser, strPWD);
             DB_stmt = DB_con.createStatement();
         } catch (Exception e) {
-            System.out.println("SQLException : " + e.getMessage());
+            System.out.println("DB열기,SQLException : " + e.getMessage());
         }
     }
 
@@ -28,7 +28,7 @@ ResultSet DB_rs;        // SQL 실행 결과 저장
             DB_stmt.close();
             DB_con.close();
         } catch (Exception e) {
-            System.out.println("SQLException : " + e.getMessage());
+            System.out.println("DB닫기,SQLException : " + e.getMessage());
         }
     }
 }
