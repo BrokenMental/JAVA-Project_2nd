@@ -59,25 +59,13 @@ public class Java_Project extends javax.swing.JFrame {
         return result;
     }
     
+    //반복문으로 체크했으면 flag를 +1해서 입력한 인원과 동일해지면 체크박스를 닫는다.
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         MovieCheck = new javax.swing.JFrame();
-        jLabel2 = new javax.swing.JLabel();
-        textAdult = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        textChild = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        btnSelectSeat = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        lbltotal = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
@@ -103,8 +91,22 @@ public class Java_Project extends javax.swing.JFrame {
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
+        textAdult = new javax.swing.JTextField();
+        textChild = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        lbltotal = new javax.swing.JLabel();
         lblamount = new javax.swing.JLabel();
+        btnSelectSeat = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         SignUp = new javax.swing.JDialog();
         jLabel1 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -117,9 +119,14 @@ public class Java_Project extends javax.swing.JFrame {
         SelectSeat = new javax.swing.JDialog();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jCheckBox4 = new javax.swing.JCheckBox();
@@ -134,21 +141,16 @@ public class Java_Project extends javax.swing.JFrame {
         jCheckBox13 = new javax.swing.JCheckBox();
         jCheckBox14 = new javax.swing.JCheckBox();
         jCheckBox15 = new javax.swing.JCheckBox();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jLabel19 = new javax.swing.JLabel();
         jCheckBox16 = new javax.swing.JCheckBox();
         jCheckBox17 = new javax.swing.JCheckBox();
         jCheckBox18 = new javax.swing.JCheckBox();
         jCheckBox19 = new javax.swing.JCheckBox();
         jCheckBox20 = new javax.swing.JCheckBox();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
-        jLabel20 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
-        jLabel21 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
         Popup1 = new javax.swing.JDialog();
         jLabel22 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
@@ -164,42 +166,6 @@ public class Java_Project extends javax.swing.JFrame {
         btnSignin = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         textPW = new javax.swing.JPasswordField();
-
-        jLabel2.setText("영화표 예매");
-
-        textAdult.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        textAdult.setText("0");
-
-        jLabel9.setText("인원 선택 : ");
-
-        jLabel10.setText("성인");
-
-        jLabel11.setText("아동");
-
-        textChild.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        textChild.setText("0");
-
-        jLabel12.setText("명");
-
-        jLabel13.setText("명");
-
-        btnSelectSeat.setText("자리선택");
-        btnSelectSeat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSelectSeatActionPerformed(evt);
-            }
-        });
-
-        jLabel14.setText("금액 : ");
-
-        jButton5.setText("예매완료");
-        jButton5.setEnabled(false);
-
-        jLabel15.setText("원");
-
-        jLabel23.setText("명");
-
-        lbltotal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -288,10 +254,12 @@ public class Java_Project extends javax.swing.JFrame {
                                 .addGap(48, 48, 48)
                                 .addComponent(jLabel34)))
                         .addGap(18, 18, 18)
-                        .addComponent(lblsecond, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblsecond, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblfirst, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jRadioButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
                         .addComponent(jLabel31)
                         .addGap(48, 48, 48)
                         .addComponent(jLabel35)
@@ -299,19 +267,14 @@ public class Java_Project extends javax.swing.JFrame {
                         .addComponent(lblthird, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel26)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel28)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel27)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel37)
-                                .addGap(9, 9, 9))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(lblfirst, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addComponent(jLabel26)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel28)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel27)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel37)
+                        .addGap(9, 9, 9)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -327,12 +290,11 @@ public class Java_Project extends javax.swing.JFrame {
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblfirst, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jRadioButton1))
+                    .addComponent(jRadioButton1)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel24)
-                        .addComponent(jLabel33)))
+                        .addComponent(jLabel33)
+                        .addComponent(lblfirst, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -356,16 +318,52 @@ public class Java_Project extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel32)
                         .addComponent(lblfourth, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel36))
+                        .addComponent(jLabel36)
+                        .addComponent(jLabel32))
                     .addComponent(jRadioButton4))
                 .addContainerGap())
         );
 
+        textAdult.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        textAdult.setText("0");
+
+        textChild.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        textChild.setText("0");
+
+        jLabel2.setText("영화표 예매");
+
+        jLabel9.setText("인원 선택 : ");
+
+        jLabel10.setText("성인");
+
+        jLabel11.setText("아동");
+
+        jLabel12.setText("명");
+
+        jLabel13.setText("명");
+
+        jLabel14.setText("금액 : ");
+
+        jLabel15.setText("원");
+
+        jLabel23.setText("명");
+
         jLabel29.setText("총");
 
+        lbltotal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         lblamount.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        btnSelectSeat.setText("자리선택");
+        btnSelectSeat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSelectSeatActionPerformed(evt);
+            }
+        });
+
+        jButton5.setText("예매완료");
+        jButton5.setEnabled(false);
 
         javax.swing.GroupLayout MovieCheckLayout = new javax.swing.GroupLayout(MovieCheck.getContentPane());
         MovieCheck.getContentPane().setLayout(MovieCheckLayout);
@@ -435,11 +433,12 @@ public class Java_Project extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(MovieCheckLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel15)
+                        .addGroup(MovieCheckLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblamount, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5)))))
+                            .addGroup(MovieCheckLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel14)
+                                .addComponent(jLabel15)
+                                .addComponent(jButton5))))))
         );
 
         SignUp.setModal(true);
@@ -515,7 +514,13 @@ public class Java_Project extends javax.swing.JFrame {
 
         jLabel17.setText("명");
 
-        jCheckBox1.setText("11");
+        jLabel18.setText("선택가능");
+
+        jLabel19.setText("스크린");
+
+        jLabel20.setText("입구");
+
+        jLabel21.setText("비상구");
 
         jButton6.setText("취소");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -526,35 +531,37 @@ public class Java_Project extends javax.swing.JFrame {
 
         jButton7.setText("확인");
 
-        jCheckBox2.setText("6");
+        jTextField8.setEditable(false);
 
-        jCheckBox3.setText("1");
+        jCheckBox1.setText("1");
 
-        jCheckBox4.setText("2");
+        jCheckBox2.setText("2");
 
-        jCheckBox5.setText("7");
+        jCheckBox3.setText("3");
 
-        jCheckBox6.setText("12");
+        jCheckBox4.setText("4");
 
-        jCheckBox7.setText("3");
+        jCheckBox5.setText("5");
+
+        jCheckBox6.setText("6");
+
+        jCheckBox7.setText("7");
 
         jCheckBox8.setText("8");
 
-        jCheckBox9.setText("13");
+        jCheckBox9.setText("9");
 
-        jCheckBox10.setText("4");
+        jCheckBox10.setText("10");
 
-        jCheckBox11.setText("9");
+        jCheckBox11.setText("11");
 
-        jCheckBox12.setText("14");
+        jCheckBox12.setText("12");
 
-        jCheckBox13.setText("5");
+        jCheckBox13.setText("13");
 
-        jCheckBox14.setText("10");
+        jCheckBox14.setText("14");
 
         jCheckBox15.setText("15");
-
-        jLabel19.setText("스크린");
 
         jCheckBox16.setText("16");
 
@@ -567,14 +574,6 @@ public class Java_Project extends javax.swing.JFrame {
         jCheckBox20.setText("20");
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        jLabel20.setText("입구");
-
-        jLabel21.setText("비상구");
-
-        jTextField8.setEditable(false);
-
-        jLabel18.setText("선택가능");
 
         javax.swing.GroupLayout SelectSeatLayout = new javax.swing.GroupLayout(SelectSeat.getContentPane());
         SelectSeat.getContentPane().setLayout(SelectSeatLayout);
@@ -593,9 +592,9 @@ public class Java_Project extends javax.swing.JFrame {
                     .addGroup(SelectSeatLayout.createSequentialGroup()
                         .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(SelectSeatLayout.createSequentialGroup()
-                                .addComponent(jCheckBox2)
+                                .addComponent(jCheckBox6)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox5))
+                                .addComponent(jCheckBox7))
                             .addGroup(SelectSeatLayout.createSequentialGroup()
                                 .addComponent(jCheckBox16)
                                 .addGap(12, 12, 12)
@@ -608,35 +607,35 @@ public class Java_Project extends javax.swing.JFrame {
                     .addGroup(SelectSeatLayout.createSequentialGroup()
                         .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(SelectSeatLayout.createSequentialGroup()
-                                .addComponent(jCheckBox3)
-                                .addGap(18, 18, 18)
-                                .addComponent(jCheckBox4))
-                            .addGroup(SelectSeatLayout.createSequentialGroup()
                                 .addComponent(jCheckBox1)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox2))
+                            .addGroup(SelectSeatLayout.createSequentialGroup()
+                                .addComponent(jCheckBox11)
                                 .addGap(12, 12, 12)
-                                .addComponent(jCheckBox6)))
+                                .addComponent(jCheckBox12)))
                         .addGap(18, 18, 18)
                         .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox7)
+                            .addComponent(jCheckBox3)
                             .addGroup(SelectSeatLayout.createSequentialGroup()
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jCheckBox8)
-                                    .addComponent(jCheckBox9))
+                                    .addComponent(jCheckBox13))
                                 .addGap(18, 18, 18)
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addGroup(SelectSeatLayout.createSequentialGroup()
-                                            .addComponent(jCheckBox12)
+                                            .addComponent(jCheckBox14)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(jCheckBox15))
                                         .addGroup(SelectSeatLayout.createSequentialGroup()
                                             .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jCheckBox11)
-                                                .addComponent(jCheckBox10))
+                                                .addComponent(jCheckBox9)
+                                                .addComponent(jCheckBox4))
                                             .addGap(18, 18, 18)
                                             .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jCheckBox13)
-                                                .addComponent(jCheckBox14))))
+                                                .addComponent(jCheckBox5)
+                                                .addComponent(jCheckBox10))))
                                     .addGroup(SelectSeatLayout.createSequentialGroup()
                                         .addGap(49, 49, 49)
                                         .addComponent(jCheckBox20)))))
@@ -689,25 +688,25 @@ public class Java_Project extends javax.swing.JFrame {
                             .addGroup(SelectSeatLayout.createSequentialGroup()
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jCheckBox1)
+                                        .addComponent(jCheckBox2)
                                         .addComponent(jCheckBox3)
                                         .addComponent(jCheckBox4)
-                                        .addComponent(jCheckBox7)
-                                        .addComponent(jCheckBox10)
-                                        .addComponent(jCheckBox13))
+                                        .addComponent(jCheckBox5))
                                     .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jCheckBox11)
-                                    .addComponent(jCheckBox2)
-                                    .addComponent(jCheckBox5)
+                                    .addComponent(jCheckBox9)
+                                    .addComponent(jCheckBox6)
+                                    .addComponent(jCheckBox7)
                                     .addComponent(jCheckBox8)
-                                    .addComponent(jCheckBox14))
+                                    .addComponent(jCheckBox10))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jCheckBox14)
+                                    .addComponent(jCheckBox11)
                                     .addComponent(jCheckBox12)
-                                    .addComponent(jCheckBox1)
-                                    .addComponent(jCheckBox6)
-                                    .addComponent(jCheckBox9)
+                                    .addComponent(jCheckBox13)
                                     .addComponent(jCheckBox15))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(SelectSeatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
