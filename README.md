@@ -9,7 +9,7 @@
 <img src = "https://github.com/BrokenMental/Java_Project-2nd/blob/master/pics/%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%8F%BC.PNG?raw=true">
 </td>
 <td width = "250px">
-<img src = "https://github.com/BrokenMental/Java_Project-2nd/blob/master/pics/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%ED%8F%BC.PNG?raw=true">
+<img src = "https://github.com/BrokenMental/Java_Project-2nd/blob/master/pics/SignUp.PNG?raw=true">
 </td>
 <td width = "250px">
 <img src="https://github.com/BrokenMental/Java_Project-2nd/blob/master/pics/MovieChoice(Before).PNG?raw=true">
